@@ -3,28 +3,40 @@ import { FiGithub } from "react-icons/fi";
 import { SlSocialLinkedin } from "react-icons/sl";
 
 const Sidebar: React.FC = () => {
+
+  const styleLi = "bg-cyan-950 p-4 rounded-xl";
+  const styleA = "text-gray-300 hover:text-white mb-6";
+  const styleI = "fab fa-linkedin-in";
+
+  const externalLinks = [
+    { 
+      nameLink: 'LinkedIn',
+      link: "https://www.linkedin.com/",
+      icon: SlSocialLinkedin,
+    }, 
+    { 
+      nameLink: 'Medium',
+      link: "https://medium.com/",
+      icon: FaMedium,
+    }, 
+    { 
+      nameLink: 'GitHub',
+      link: "https://github.com/",
+      icon: FiGithub,
+    }, 
+  ] 
+
   return (
-    <div className="bg-gray-800 h-screen w-52 flex flex-col items-center justify-center fixed ">
-      <ul className=" flex flex-col gap-9">
-        <li>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white mb-6">
-            <i className="fab fa-linkedin-in"><SlSocialLinkedin size={32}/></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://medium.com/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white mb-6">
-            <i className="fab fa-medium-m"><FaMedium size={32}/></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
-            <i className="fab fa-github"><FiGithub size={32} /></i>
-          </a>
-        </li>
+    <div className="h-screen w-32 flex flex-col items-end justify-center fixed ">
+      <ul className=" flex flex-col gap-4">
+        {externalLinks.map(( link, index)=>(
+          <li key={index} className={styleLi}>
+            <a href={link.link} target="_blank" rel="noopener noreferrer" className={styleA} aria-label={`Access my ${link.nameLink} using this link`}>
+              <span className={styleI}><link.icon size={32}/></span>
+            </a>
+          </li>
+        ))}
       </ul>
-      
-      
-      
     </div>
   );
 };
