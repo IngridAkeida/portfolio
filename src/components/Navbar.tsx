@@ -19,21 +19,20 @@ const NavBar: React.FC = () => {
   };
 
   return (
-    <nav className="bg-gray-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          <div className="flex flex-row justify-between">
-            <Logo />
-          </div>
-          <div className='flex justify-end w-20 mr-2 sm:h-auto"'>
-          <BtnDarkMode toggleDarkMode={toggleDarkMode} darkMode={darkMode}/>
-          </div>
-          <div className="hidden md:block">
-            <div className="ml-4 flex items-baseline space-x-4">
-            <Menus/>
+    <nav className="bg-gray-800 fixed top-0 inset-x-0 z-50 p-6 md:p-0 gap-[5rem] sm:gap-[8rem] mx-auto lg:max-w-5xl">
+      <div className="">
+        <div className="flex items-center justify-between h-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">      
+          <Logo />
+          <div className='flex justify-end'>
+            <div className='flex justify-end w-20 mr-2 sm:h-auto border'>
+              <BtnDarkMode toggleDarkMode={toggleDarkMode} darkMode={darkMode}/>
+            </div>
+            <div className="hidden md:block">
+              <Menus/>
             </div>
           </div>
-          <div className="">
+        </div>
+        <div className="">
             <button 
               onClick={toggleMenu} 
               type="button" 
@@ -65,7 +64,6 @@ const NavBar: React.FC = () => {
               </svg>
             </button>
           </div>
-        </div>
       </div>
       <div className={`${isOpen ? 'block' : 'hidden'} md:hidden`}>
         <div className="px-2 pt-2 pb-3 sm:px-3">
