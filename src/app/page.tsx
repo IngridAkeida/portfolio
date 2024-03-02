@@ -2,13 +2,17 @@
 import Navbar from '@/components/Navbar';
 import Sidebar from '@/components/Sidebar';
 import TechnologiesList from '@/components/TechnologiesList';
+import Technologies from '@/components/data/Technologies';
 import Image from 'next/image';
 
 import { CiDesktopMouse2 } from "react-icons/ci";
 import { IoIosArrowDown } from "react-icons/io";
 
+interface AppProps {
+  darkMode: boolean;
+}
 
-const App: React.FC = ({darkMode, technologies}) => {
+const App: React.FC<AppProps> = ({ darkMode })  => {
   return (      
     <div className={`bg-gray-100 text-cyan-900 dark:bg-cyan-900 dark:text-gray-100 transition-colors duration-500 ${darkMode && 'dark'} p-6 md:p-0 flex flex-col mx-auto lg:max-w-5xl`}>
       <header>
@@ -55,7 +59,7 @@ const App: React.FC = ({darkMode, technologies}) => {
           <article className="text-md">
           
           </article>
-            <TechnologiesList technologies={technologies}/>
+            <TechnologiesList technologies={Technologies}/>
             
           </div>
         </div>
