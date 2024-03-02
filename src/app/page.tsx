@@ -11,14 +11,14 @@ const App: React.FC = (darkMode) => {
   
 
   return (      
-    <div className={`bg-white dark:bg-gray-800 transition-colors duration-500 ${darkMode && 'dark'} p-6 md:p-10 flex flex-col gap-[5rem] sm:gap-[8rem] mx-auto lg:max-w-7xl border`}>
+    <div className={`bg-white dark:bg-gray-800 transition-colors duration-500 ${darkMode && 'dark'} p-6 md:p-0 flex flex-col gap-[5rem] sm:gap-[8rem] mx-auto lg:max-w-5xl border`}>
       <header>
-        <Navbar/>
-        <Sidebar/>
+        <Navbar /> 
+        <Sidebar />
       </header>
-      
-
       <main className="container mx-auto py-8 px-4 flex min-h-screen flex-col items-center justify-between p-24">
+        
+      
         <div className=' h-screen flex flex-col gap-4 justify-center items-center'>
           <div className='flex items-center gap-4'>
             <div>
