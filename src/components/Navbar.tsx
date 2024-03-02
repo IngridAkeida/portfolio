@@ -24,7 +24,7 @@ const NavBar: React.FC = () => {
         <div className="flex items-center justify-between h-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">      
           <Logo />
           <div className='flex justify-end'>
-            <div className='flex justify-end w-20 mr-2 sm:h-auto border'>
+            <div className='flex justify-end w-20 mr-8 sm:h-auto'>
               <BtnDarkMode toggleDarkMode={toggleDarkMode} darkMode={darkMode}/>
             </div>
             <div className="hidden md:block">

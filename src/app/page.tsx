@@ -11,7 +11,7 @@ const App: React.FC = (darkMode) => {
   
 
   return (      
-    <div className={`bg-white dark:bg-gray-800 transition-colors duration-500 ${darkMode && 'dark'} p-6 md:p-0 flex flex-col mx-auto lg:max-w-5xl border`}>
+    <div className={`bg-white dark:bg-gray-800 transition-colors duration-500 ${darkMode && 'dark'} p-6 md:p-0 flex flex-col mx-auto lg:max-w-5xl`}>
       <header>
         <Navbar /> 
         <Sidebar />
@@ -27,7 +27,7 @@ const App: React.FC = (darkMode) => {
                 <p>{`I'm`} a business grad {`who's`} taken a detour into the dazzling world of Tech ⭐️!</p>
                 <p>Yes, from processing, performance, usability, accessibility and line coding.</p>
               </div>
-              <div className='border'>
+              <div className=''>
                 <Image src="/assets/bio-image.png" alt="Ingrid Sanches Perfil image"
                 className='rounded-full' 
                 width={200} height={200}/>
