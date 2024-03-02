@@ -19,7 +19,7 @@ const NavBar: React.FC = () => {
   };
 
   return (
-    <nav className="bg-gray-800 fixed top-0 inset-x-0 z-50 p-6 md:p-0 gap-[5rem] sm:gap-[8rem] mx-auto lg:max-w-5xl">
+    <nav className="bg-cyan-950 fixed top-0 inset-x-0 z-50 p-6 md:p-0 gap-[5rem] sm:gap-[8rem] mx-auto lg:max-w-5xl">
       <div className="">
         <div className="flex items-center justify-between h-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">      
           <Logo />
