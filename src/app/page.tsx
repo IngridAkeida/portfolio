@@ -11,31 +11,31 @@ const App: React.FC = (darkMode) => {
   
 
   return (      
-    <div className={`bg-white dark:bg-gray-800 transition-colors duration-500 ${darkMode && 'dark'} p-6 md:p-0 flex flex-col gap-[5rem] sm:gap-[8rem] mx-auto lg:max-w-5xl border`}>
+    <div className={`bg-white dark:bg-gray-800 transition-colors duration-500 ${darkMode && 'dark'} p-6 md:p-0 flex flex-col mx-auto lg:max-w-5xl border`}>
       <header>
         <Navbar /> 
         <Sidebar />
       </header>
-      <main className="container mx-auto py-8 px-4 flex min-h-screen flex-col items-center justify-between p-24">
-        
-      
+      <main className="container mx-auto py-8 px-4 min-h-screen p-24 grid grid-cols-4 gap-4">  
+      <div className='p-4'></div>
+      <div className='p-4 col-span-3'>
         <div className=' h-screen flex flex-col gap-4 justify-center items-center'>
-          <div className='flex items-center gap-4'>
-            <div>
-              <h1 className="text-2xl font-bold">Hi, {`I'm`} Ingrid Sanches</h1>
-              <h2 className="text-md font-bold">Front End Developer</h2>
-              <p>{`I'm`} a business grad {`who's`} taken a detour into the dazzling world of Tech ⭐️!</p>
-              <p>Yes, from processing, performance, usability, accessibility and line coding.</p>
+            <div className='flex items-center gap-4'>
+              <div>
+                <h1 className="text-2xl font-bold">Hi, {`I'm`} Ingrid Sanches</h1>
+                <h2 className="text-md font-bold">Front End Developer</h2>
+                <p>{`I'm`} a business grad {`who's`} taken a detour into the dazzling world of Tech ⭐️!</p>
+                <p>Yes, from processing, performance, usability, accessibility and line coding.</p>
+              </div>
+              <div className='border'>
+                <Image src="/assets/bio-image.png" alt="Ingrid Sanches Perfil image"
+                className='rounded-full' 
+                width={200} height={200}/>
+              </div>
             </div>
-            <div className='border'>
-              <Image src="/assets/bio-image.png" alt="Ingrid Sanches Perfil image"
-              className='rounded-full' 
-              width={200} height={200}/>
-            </div>
-          </div>
-          <div className='flex items-center gap-2 mt-28'> <CiDesktopMouse2 /> Scroll down <IoIosArrowDown /></div>
-          
-          
+            <div className='flex items-center gap-2 mt-28'> <CiDesktopMouse2 /> Scroll down <IoIosArrowDown /></div>
+            
+            
         </div>
         <div className='h-screen flex flex-col gap-4 justify-center items-center'>
           <div>
@@ -57,6 +57,8 @@ const App: React.FC = (darkMode) => {
           <p className="text-lg mb-8">
           </p>
         </div>
+      </div>
+        
       </main>
       <footer className="py-4 px-8 text-center text-gray-600 dark:text-gray-400">
         <div>
