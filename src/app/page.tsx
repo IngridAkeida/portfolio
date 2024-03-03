@@ -66,7 +66,7 @@ const App: React.FC<AppProps> = ({ darkMode })  => {
           </div>
         </div>
         
-        <div className='h-screen flex flex-col gap-4 justify-left items-center'>
+        <div className='h-screen flex flex-col justify-left'>
           <h3 className="text-2xl font-bold mb-2">Projects:</h3>
           <Projects/>
         </div>

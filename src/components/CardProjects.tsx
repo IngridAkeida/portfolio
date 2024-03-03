@@ -27,39 +27,70 @@ const Projects: React.FC = () => {
       aboutProject:'loremmmmmmmm',
       buildProject: 'alone',
       technologies: [ 'ReactJs', 'css']
+    },
+    {
+      nameProject: 'example',
+      imgProject: 'https://www.petz.com.br/blog//wp-content/uploads/2021/11/enxoval-para-gato-Copia.jpg',
+      siteProject: '',
+      repositorieProject:'',
+      aboutProject:'loremmmmmmmm',
+      buildProject: 'alone',
+      technologies: [ 'ReactJs', 'css']
+    },
+    {
+      nameProject: 'example',
+      imgProject: 'https://www.petz.com.br/blog//wp-content/uploads/2021/11/enxoval-para-gato-Copia.jpg',
+      siteProject: '',
+      repositorieProject:'',
+      aboutProject:'loremmmmmmmm',
+      buildProject: 'alone',
+      technologies: [ 'ReactJs', 'css']
+    },
+    {
+      nameProject: 'example',
+      imgProject: 'https://www.petz.com.br/blog//wp-content/uploads/2021/11/enxoval-para-gato-Copia.jpg',
+      siteProject: '',
+      repositorieProject:'',
+      aboutProject:'loremmmmmmmm',
+      buildProject: 'alone',
+      technologies: [ 'ReactJs', 'css']
     }
   ]
 
 
   return (
-    <ul className="flex m-4 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <ul className="flex gap-4">
       {CardProjects.map((project, index) => (
-        <li key={index} className="relative w-full">
-          <div className="rounded-t-lg overflow-hidden">
-            <Image
-              src={project.imgProject}
-              alt=""
-              layout="responsive"
-              width={400}
-              height={200}
-              objectFit="cover"
-            />
-          </div>
-          <div className="p-5">
-            <div>
-              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{project.nameProject}</h5>
-              {/* Assuming project.buildProject is a component */}
-              <project.buildProject />
+        <li key={index} className="flex gap-4 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        
+          <div  className="relative">
+            <div className="rounded-t-lg overflow-hidden">
+              <Image
+                src={project.imgProject}
+                alt=""
+                layout="responsive"
+                width={400}
+                height={200}
+                objectFit="cover"
+              />
             </div>
-            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{project.aboutProject}</p>
-            <div>
-              <a href={project.siteProject} className={styleLink}>Site</a>
-              <a href={project.repositorieProject} className={styleLink}>GitHub</a>
+            <div className="p-5">
+              <div>
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{project.nameProject}</h5>
+                <project.buildProject />
+              </div>
+              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{project.aboutProject}</p>
+              <div>
+                <a href={project.siteProject} className={styleLink}>Site</a>
+                <a href={project.repositorieProject} className={styleLink}>GitHub</a>
+              </div>
             </div>
           </div>
+
         </li>
       ))}
     </ul>
+    
   );
 }
 
