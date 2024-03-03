@@ -11,7 +11,7 @@ interface TechnologiesProps {
 const TechnologiesList : React.FC<TechnologiesProps> = ({ technologies }) => {
   
   return (
-    <ul className="grid grid-cols-3 place-items-center gap-2">
+    <ul className="flex justify-left">
       {technologies.map((technology, index) => (
         <li key={index}>
           <a href={technology.link} target="_blank" aria-label={technology.name} rel="noreferrer">
