@@ -2,11 +2,14 @@
 import Navbar from '@/components/Navbar';
 import Sidebar from '@/components/Sidebar';
 import TechnologiesList from '@/components/TechnologiesList';
+import Projects from '@/components/cardProjects';
 import Technologies from '@/components/data/Technologies';
 import Image from 'next/image';
 
 import { CiDesktopMouse2 } from "react-icons/ci";
 import { IoIosArrowDown } from "react-icons/io";
+
+
 
 interface AppProps {
   darkMode: boolean;
@@ -57,17 +60,15 @@ const App: React.FC<AppProps> = ({ darkMode })  => {
           <div>
           <h3 className="text-2xl font-bold mb-2">Skills:</h3>
           <article className="text-md">
-          
+          Yes, from processing, performance, usability, accessibility and line coding, I am now a student at Hyper Island, working as a freelancer in the digital universe. {`I'm`} currently diving head first into React and TypeScript 🌱, but hey, {`I'm`} ready for any project! After all, learning is my game 💓. Oh, and did I mention? I love cats and horror movies 🐱👻. So expect some spooky surprises in my projects! 😉
           </article>
             <TechnologiesList technologies={Technologies}/>
-            
           </div>
         </div>
         
-        <div className='h-screen flex flex-col gap-4 justify-center items-center'>
-          <h3>Projects:</h3>
-          <p className="text-lg mb-8">
-          </p>
+        <div className='h-screen flex flex-col gap-4 justify-left items-center'>
+          <h3 className="text-2xl font-bold mb-2">Projects:</h3>
+          <Projects/>
         </div>
       </div>
         
