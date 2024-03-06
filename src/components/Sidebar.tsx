@@ -4,7 +4,7 @@ import { SlSocialLinkedin } from "react-icons/sl";
 
 const Sidebar: React.FC = () => {
 
-  const styleLi = "bg-cyan-950 p-4 rounded-xl";
+  const styleLi = "bg-cyan-950 p-2 sm:p-4 rounded-xl";
   const styleA = "text-gray-300 hover:text-white mb-6";
   const styleI = "fab fa-linkedin-in";
 
@@ -27,12 +27,12 @@ const Sidebar: React.FC = () => {
   ] 
 
   return (
-    <div className="h-screen w-32 flex flex-col items-end justify-center fixed ">
+    <div className="h-screen sm:w-32 flex flex-col items-end justify-center fixed ">
       <ul className=" flex flex-col gap-4">
         {externalLinks.map(( link, index)=>(
           <li key={index} className={styleLi}>
             <a href={link.link} target="_blank" rel="noopener noreferrer" className={styleA} aria-label={`Access my ${link.nameLink} using this link`}>
-              <span className={styleI}><link.icon size={32}/></span>
+              <span className={styleI}><link.icon size={28}/></span>
             </a>
           </li>
         ))}

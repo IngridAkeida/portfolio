@@ -1,9 +1,15 @@
 "use client"
+import TechnologiesList from '@/components/TechnologiesList';
+import Technologies from '@/components/data/technologies';
+
+import AbilitiesList from '@/components/AbilitiesList';
+import Abilities from '@/components/data/abilities';
+
 import Navbar from '@/components/Navbar';
 import Sidebar from '@/components/Sidebar';
-import TechnologiesList from '@/components/TechnologiesList';
-import Projects from '@/components/cardProjects';
-import Technologies from '@/components/data/Technologies';
+
+import CardProjects from '@/components/CardProjects';
+
 import Image from 'next/image';
 
 import { CiDesktopMouse2 } from "react-icons/ci";
@@ -17,7 +23,7 @@ interface AppProps {
 
 const App: React.FC<AppProps> = ({ darkMode })  => {
   return (      
-    <div className={`bg-gray-100 text-cyan-900 dark:bg-cyan-900 dark:text-gray-100 transition-colors duration-500 ${darkMode && 'dark'} p-6 md:p-0 flex flex-col mx-auto lg:max-w-5xl`}>
+    <div className={`bg-gray-100 text-cyan-900 dark:bg-cyan-900 dark:text-gray-100 transition-colors duration-500 ${darkMode && 'dark'} p-6 md:p-0 flex flex-col mx-auto lg:max-w-7xl`}>
       <header>
         <Navbar /> 
         <Sidebar />
@@ -63,12 +69,13 @@ const App: React.FC<AppProps> = ({ darkMode })  => {
           Yes, from processing, performance, usability, accessibility and line coding, I am now a student at Hyper Island, working as a freelancer in the digital universe. {`I'm`} currently diving head first into React and TypeScript 🌱, but hey, {`I'm`} ready for any project! After all, learning is my game 💓. Oh, and did I mention? I love cats and horror movies 🐱👻. So expect some spooky surprises in my projects! 😉
           </article>
             <TechnologiesList technologies={Technologies}/>
+            <AbilitiesList abilities={Abilities}/>
           </div>
         </div>
         
         <div className='h-screen flex flex-col justify-left'>
           <h3 className="text-2xl font-bold mb-2">Projects:</h3>
-          <Projects/>
+          <CardProjects/>
         </div>
       </div>
         
