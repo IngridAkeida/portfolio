@@ -1,6 +1,8 @@
 
 const btnDropdownStyle = "inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
 
+const nav = 'p-2 md:p-0 gap-[5rem] sm:gap-[8rem] mx-auto lg:max-w-5xl';
+
 import { useState } from 'react';
 import BtnDarkMode from "./BtnDarkMode";
 import Logo from './Logo';
@@ -20,9 +22,9 @@ const NavBar: React.FC = () => {
   };
 
   return (
-    <nav className="bg-cyan-950 fixed top-0 inset-x-0 z-50 p-2 md:p-0 gap-[5rem] sm:gap-[8rem] mx-auto lg:max-w-5xl">
-      <div className="">
-        <div className="flex items-center justify-between h-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">      
+    <nav className="fixed w-screen top-0 z-50 p-2 h-16 md:p-0 mx-auto lg:max-w-5xl bg-cyan-950 ">
+      <div className="px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between">      
           <Logo />
           <div className='flex justify-end items-center'>
             <div className='md:hidden'>
