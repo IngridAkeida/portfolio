@@ -1,9 +1,9 @@
-import Image from "next/image";
+import { IconType } from "react-icons";
 
 interface TechnologiesProps {
   technologies: {
     name: string;
-    image: string;
+    image: IconType;
     link: string;
   }[];
 }
@@ -15,8 +15,8 @@ const TechnologiesList : React.FC<TechnologiesProps> = ({ technologies }) => {
       {technologies.map((technology, index) => (
         <li key={index}>
           <a href={technology.link} target="_blank" aria-label={technology.name} rel="noreferrer">
-            <Image src={technology.image} alt={technology.name} width={50} 
-            height={50}/>
+            <technology.image size={60}/>
+            <p>{technology.name}</p>
           </a>
         </li>
       ))}     
