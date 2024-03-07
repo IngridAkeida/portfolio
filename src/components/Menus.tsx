@@ -4,11 +4,6 @@ const Menus: React.FC = () => {
 
   const menus = [
     {
-      menuName: 'Home',
-      menuStyle: munuTailwind,
-      menuHref: '#'
-    },
-    {
       menuName: 'About',
       menuStyle: munuTailwind,
       menuHref: '#'
