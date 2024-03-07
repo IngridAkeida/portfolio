@@ -21,7 +21,7 @@ const Main: React.FC = () => {
     <main className="px-4 mt-8 mx-auto min-h-screen md:grid md:grid-cols-6 gap-4">  
       <div className='md:visible'></div>
       <div className='col-span-5'>
-        <div id="page1" className='container h-screen flex flex-col gap-4 justify-center items-center'>
+        <div id="page1" className='container h-screen flex flex-col gap-4 justify-center items-center bg-cover bg-no-repeat bg-center bg-image'>
           <Intro/>
           <Overview/>
           <div className="absolute bottom-4">
