@@ -11,16 +11,19 @@ interface TechnologiesProps {
 const TechnologiesList : React.FC<TechnologiesProps> = ({ technologies }) => {
   
   return (
-    <ul className="flex justify-left">
-      {technologies.map((technology, index) => (
-        <li key={index}>
-          <a href={technology.link} target="_blank" aria-label={technology.name} rel="noreferrer">
-            <technology.image size={60}/>
-            <p>{technology.name}</p>
-          </a>
-        </li>
-      ))}     
-    </ul>
+    <div className="">
+      <h4 className="text-xl font-bold mt-2 mb-1">Hard Skills</h4>
+      <ul className="flex flex-wrap justify-center md:justify-start">
+        {technologies.map((technology, index) => (
+          <li key={index} className="hover:animate-bounce hover:border hover:border-zinc-950">
+            <a href={technology.link} className="flex flex-col items-center justify-center md:justify-start mx-2 my-2" target="_blank" aria-label={technology.name} rel="noreferrer">
+              <technology.image size={30}/>
+              <p>{technology.name}</p>
+            </a>
+          </li>
+        ))}     
+      </ul>
+    </div>
   );
 }
 
