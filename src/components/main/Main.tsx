@@ -39,13 +39,13 @@ const Main: React.FC = () => {
         </div>
 
         <div className='containerflex flex-col gap-4 justify-center items-center'>
-          <div id='page2' className='scroll-m-8'>
+          <div id='about' className='scroll-m-8'>
             <h3 className=" text-2xl font-bold mt-2 mb-1">About me:</h3>
             <article className="text-md">
               I am a front-end developer, with a background in UX/UI and a passion for technology. I am a creative and curious person, always looking for new challenges and opportunities to learn. I am a team player, with a strong sense of empathy and a passion for creating user-friendly and accessible digital solutions. I am a student at Hyper Island, working as a freelancer in the digital universe. I am currently diving head first into React and TypeScript, but hey, I am ready for any project! After all, learning is my game. Oh, and did I mention? I love cats and horror movies. So expect some spooky surprises in my projects! 😉
             </article>
           </div>
-          <div>
+          <div id="skills">
           <h3 className="text-2xl font-bold mt-2 mb-1">Skills:</h3>
           <article className="text-md">
           My journey began with a fascination for UI and UX, but soon, I found my passion for programming. ReactJS has become an integral part of my daily workflow, and {`I've`} been delving into TypeScript to enhance my development skills. Recently, {`I've`} also ventured into the realms of SEO and accessibility, recognizing their profound impact on user experience. After all, what purpose does a website serve if it {`doesn't`} cater to the needs and desires of its users? Join me as I share my journey and the valuable lessons I continue to learn along the way.
