@@ -45,7 +45,10 @@ const Sidebar: React.FC = () => {
           <li key={index} className={styleLi}>
             <a href={link.link} target="_blank" rel="noopener noreferrer" className={styleA} aria-label={`Access my ${link.nameLink} using this link`}>
               <span>
-                <link.icon size={18}/>
+                <link.icon 
+                  size={18} 
+                  className="hover:animate-wiggle-more"
+                />
               </span>
             </a>
           </li>
