@@ -15,7 +15,7 @@ const AbilitiesList : React.FC<AbilitiesProps> = ({ abilities }) => {
       <div className="flex flex-col">
         <ul className="flex flex-wrap justify-start gap-4">
           {abilities.map((ability, index) => (
-            <li key={index} className="flex flex-col items-center text-center justify-center mx-2 my-2 w-16">
+            <li key={index} className="hover:animate-jump flex flex-col items-center text-center justify-center mx-2 my-2 w-16">
                 <ability.icon size={30}/>
                 <p className="mt-2 text-sm">{ability.skill}</p>
             </li>

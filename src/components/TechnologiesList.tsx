@@ -17,7 +17,7 @@ const TechnologiesList: React.FC<TechnologiesProps> = ({ technologies }) => {
           {technologies.map((technology, index) => (
             <li
               key={index}
-              className="hover:animate-bounce hover:border-zinc-950 w-22 text-wrap text-center"
+              className="hover:animate-jump hover:border-zinc-950 w-22 text-wrap text-center"
             >
               <a
                 href={technology.link}
