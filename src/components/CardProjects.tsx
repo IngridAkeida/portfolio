@@ -4,7 +4,7 @@ import { IoIosPeople } from "react-icons/io";
 import { MdPerson2 } from "react-icons/md";
 
 interface ProjectProps{
-    abilities: {
+    Projects: {
       nameProject: string;
       imgProject:  string;
       siteProject: string;
@@ -19,7 +19,7 @@ const CardProjects: React.FC <ProjectProps> = () => {
   const styleLink =
     "inline-flex items-center justify-center px-3 py-2 text-sm w-24 font-medium text-center bg-cyan-950 hover:bg-cyan-700 text-gray-100 rounded-md focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800";
 
-  const CardProjects = [
+  const Projects = [
     {
       nameProject: "HyperFlix",
       imgProject: "/assets/projects/1.png",
@@ -73,7 +73,7 @@ const CardProjects: React.FC <ProjectProps> = () => {
 
   return (
     <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
-      {CardProjects.map((project, index) => (
+      {Projects.map((project, index) => (
         <li
           key={index}
           className="flex gap-4 bg-[#709994] border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 h-auto max-w-96 rounded-lg"

@@ -32,7 +32,8 @@ const NavBar: React.FC = () => {
                 className={btnDropdownStyle}
                 data-collapse-toggle="navbar-default"  
                 aria-controls="navbar-default" 
-                aria-expanded="false">
+                aria-expanded="false"
+                title="Toggle Menu">
 
                 <svg 
                   className={`${isOpen ? 'hidden' : 'block'} h-4 w-4`} stroke="currentColor" 

@@ -28,11 +28,11 @@ const Main: React.FC = () => {
             <button 
               className='animate-bounce mt-4 bg-cyan-950 hover:bg-cyan-700 text-gray-100 py-2 px-4 rounded-md'
               onClick={scrollToProjects}>
-              <a href="#projects" className='flex items-center gap-2'>   
+              <span className='flex items-center gap-2'>   
                 <CiDesktopMouse2 size={30}/> 
                 Scroll to Projects 
                 <IoIosArrowDown size={30}/>
-              </a>
+              </span>
             </button> 
           </div>           
         </div>
@@ -54,10 +54,7 @@ const Main: React.FC = () => {
           </div>
         </div>
         
-        <div id='projects' className='container scroll-mt-20 flex flex-col justify-left'>
-          <h3 className="text-2xl font-bold mb-2">Projects:</h3>
-          <CardProjects/> 
-        </div>
+        <CardProjects Projects={[]} />
       </div>
     </main>
   )
