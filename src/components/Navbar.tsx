@@ -68,7 +68,7 @@ const NavBar: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className='bg-gray-100 md:hidden flex items-center justify-between'>
+      <div className='bg-[#cededc] md:hidden flex items-center justify-between'>
         <Sidebar/>
         <BtnDarkMode toggleDarkMode={toggleDarkMode} darkMode={darkMode}/>
       </div>
