@@ -26,7 +26,7 @@ const Main: React.FC = () => {
             <Overview/>
           <div className="absolute bottom-4">
             <button 
-              className='animate-bounce mt-4 bg-cyan-300 py-2 px-4 rounded-md'
+              className='animate-bounce mt-4 bg-cyan-950 hover:bg-cyan-700 text-gray-100 py-2 px-4 rounded-md'
               onClick={scrollToProjects}>
               <a href="#projects" className='flex items-center gap-2'>   
                 <CiDesktopMouse2 size={30}/> 
