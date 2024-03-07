@@ -18,15 +18,12 @@ const Main: React.FC = () => {
   }
 
   return(
-    <main className="px-4 mt-8 mx-auto min-h-screen md:grid md:grid-cols-6 gap-4">  
+    <main className="px-4 mt-8 mx-auto min-h-screen md:grid md:grid-cols-6 gap-4 ">  
       <div className='md:visible'></div>
       <div className='col-span-5'>
-        <div id="page1" className='container h-screen flex flex-col gap-4 justify-center items-center bg-cover bg-no-repeat bg-center bg-image'>
-          <div className="p-2 bg-cyan-50 bg-opacity-50 rounded-md">
+        <div id="page1" className='container h-screen flex flex-col gap-4 justify-center items-center'>
             <Intro/>
             <Overview/>
-          </div>
-          
           <div className="absolute bottom-4">
             <button 
               className='animate-bounce mt-4 bg-cyan-300 py-2 px-4 rounded-md'
