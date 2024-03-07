@@ -33,7 +33,7 @@ const Sidebar: React.FC = () => {
     },
     { 
       nameLink: 'Drinbble',
-      link: "https://dribbble.com/IngriDiz",
+      link: 'mailto:ingridsanchesp@gmail.com',
       icon: IoLogoDribbble,
     },
   ] 
