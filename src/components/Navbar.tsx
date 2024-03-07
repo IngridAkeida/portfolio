@@ -1,12 +1,10 @@
-
-const btnDropdownStyle = "inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-
-const nav = 'p-2 md:p-0 gap-[5rem] sm:gap-[8rem] mx-auto lg:max-w-5xl';
+const btnDropdownStyle = "inline-flex items-center w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-cyan-900 dark:focus:ring-gray-600"
 
 import { useState } from 'react';
 import BtnDarkMode from "./BtnDarkMode";
 import Logo from './Logo';
 import Menus from './Menus';
+import Sidebar from './Sidebar';
 
 const NavBar: React.FC = () => {
   const [darkMode, setDarkMode] = useState<boolean>(false);
@@ -22,14 +20,11 @@ const NavBar: React.FC = () => {
   };
 
   return (
-    <nav className="fixed w-screen top-0 z-50 p-2 h-16 md:p-0 mx-auto lg:max-w-5xl bg-cyan-950 ">
-      <div className="px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between">      
+    <nav className="fixed w-screen top-0 z-50 md:p-0 mx-auto lg:max-w-7xl  ">
+      <div className="bg-cyan-950 px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16 md:h-20">      
           <Logo />
           <div className='flex justify-end items-center'>
-            <div className='md:hidden'>
-              <BtnDarkMode toggleDarkMode={toggleDarkMode} darkMode={darkMode}/>
-            </div>
             <div className="md:hidden">
               <button 
                 onClick={toggleMenu} 
@@ -40,7 +35,7 @@ const NavBar: React.FC = () => {
                 aria-expanded="false">
 
                 <svg 
-                  className={`${isOpen ? 'hidden' : 'block'} h-6 w-6`} stroke="currentColor" 
+                  className={`${isOpen ? 'hidden' : 'block'} h-4 w-4`} stroke="currentColor" 
                   fill="none" 
                   viewBox="0 0 24 24">
                   <path 
@@ -51,7 +46,7 @@ const NavBar: React.FC = () => {
                 </svg>
 
                 <svg 
-                  className={`${isOpen ? 'block' : 'hidden'} h-6 w-6`} 
+                  className={`${isOpen ? 'block' : 'hidden'} h-4 w-4`} 
                   stroke="currentColor" 
                   fill="none" viewBox="0 0 24 24">
                   <path 
@@ -73,7 +68,11 @@ const NavBar: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="md:flex md:justify-end md:items-center hidden">
+      <div className='bg-gray-100 md:hidden flex items-center justify-between'>
+        <Sidebar/>
+        <BtnDarkMode toggleDarkMode={toggleDarkMode} darkMode={darkMode}/>
+      </div>
+      <div className="md:flex md:mr-2 md:justify-end md:items-center hidden">
         <BtnDarkMode toggleDarkMode={toggleDarkMode} darkMode={darkMode}/>
       </div>
     </nav>
