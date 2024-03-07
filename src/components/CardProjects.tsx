@@ -44,20 +44,20 @@ const CardProjects: React.FC = () => {
       buildProject: MdPerson2,
       technologies: [ 'ReactJs', 'css']
     },
-    {
-      nameProject: 'Find My GitHub',
-      imgProject: '/assets/projects/5.png',
-      siteProject: '',
-      repositorieProject:'',
-      aboutProject:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut volutpat mauris. Nam facilisis ipsum eget urna congue, ac sodales nunc vulputate. Phasellus sit amet sapien at dui eleifend tincidunt. Nulla facilisi. Aenean auctor ipsum non risus vehicula, ac malesuada mi fermentum. Pellentesque euismod leo nec nulla bibendum, vel tristique felis facilisis. Suspendisse auctor enim vitae nunc posuere, vitae tempus mauris luctus.',
-      buildProject: MdPerson2,
-      technologies: [ 'ReactJs', 'css']
-    }
+    // {
+    //   nameProject: 'Find My GitHub',
+    //   imgProject: '/assets/projects/5.png',
+    //   siteProject: '',
+    //   repositorieProject:'',
+    //   aboutProject:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut volutpat mauris. Nam facilisis ipsum eget urna congue, ac sodales nunc vulputate. Phasellus sit amet sapien at dui eleifend tincidunt. Nulla facilisi. Aenean auctor ipsum non risus vehicula, ac malesuada mi fermentum. Pellentesque euismod leo nec nulla bibendum, vel tristique felis facilisis. Suspendisse auctor enim vitae nunc posuere, vitae tempus mauris luctus.',
+    //   buildProject: MdPerson2,
+    //   technologies: [ 'ReactJs', 'css']
+    // }
   ]
 
 
   return (
-    <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
       {CardProjects.map((project, index) => (
         <li key={index} className="flex gap-4 bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 h-auto max-w-96 rounded-lg">
 

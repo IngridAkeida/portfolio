@@ -1,5 +1,5 @@
 import { IoLogoJavascript, IoLogoHtml5, IoLogoCss3, IoLogoDribbble, IoLogoMarkdown, IoLogoNpm, IoLogoNodejs, } from "react-icons/io";
-import { SiTypescript, SiTailwindcss, SiStyledcomponents, SiCanva, SiGnubash, SiPowershell, SiNetlify } from "react-icons/si";
+import { SiTypescript, SiTailwindcss, SiStyledcomponents, SiCanva, SiGnubash, SiReactrouter, SiPowershell, SiNetlify } from "react-icons/si";
 import { IoLogoReact, IoLogoFigma, IoLogoFirebase, IoLogoVercel } from "react-icons/io5";
 import { FaBootstrap } from "react-icons/fa6";
 import { FaTrello } from "react-icons/fa";
@@ -24,6 +24,26 @@ const technologies = [
         link: 'https://www.w3schools.com/css/'
       },
       {
+        name: 'TypeScript',
+        image: SiTypescript,
+        link: 'https://www.typescriptlang.org/'
+      },
+      {
+        name: 'React.js',
+        image: IoLogoReact,
+        link: 'https://reactjs.org/'
+      },
+      {
+        name: 'React Router',
+        image: SiReactrouter,
+        link: 'https://reactrouter.com/'
+      },
+      {
+        name: 'Markdown',
+        image: IoLogoMarkdown,
+        link: 'https://www.markdownguide.org/'
+      },
+      {
         name: 'Bash',
         image: SiGnubash,
         link: 'https://www.gnu.org/software/bash/'
@@ -34,9 +54,9 @@ const technologies = [
         link: 'https://nodejs.org'
       },
       {
-        name: 'React',
-        image: IoLogoReact,
-        link: 'https://reactjs.org/'
+        name: 'NPM',
+        image: IoLogoNpm,
+        link: 'https://www.npmjs.com/'
       },
       {
         name: 'Bootstrap',
@@ -49,9 +69,9 @@ const technologies = [
         link: 'https://tailwindcss.com/'
       },
       {
-        name: 'TypeScript',
-        image: SiTypescript,
-        link: 'https://www.typescriptlang.org/'
+        name: 'Styled Components',
+        image: SiStyledcomponents,
+        link: 'https://styled-components.com/'
       },
       {
         name: 'Next.js',
@@ -59,24 +79,9 @@ const technologies = [
         link: 'https://nextjs.org/'
       },
       {
-        name: 'Supabase',
-        image: RiSupabaseFill,
-        link: 'https://supabase.com/'
-      },
-      {
-        name: 'Trello',
-        image: FaTrello,
-        link: 'https://trello.com/'
-      },
-      {
-        name: 'Trello',
-        image: IoLogoNpm,
-        link: 'https://www.npmjs.com/'
-      },
-      {
-        name: 'Styled Components',
-        image: SiStyledcomponents,
-        link: 'https://styled-components.com/'
+        name: 'Netlify',
+        image: SiNetlify,
+        link: 'https://app.netlify.com/'
       },
       {
         name: 'Figma',
@@ -92,7 +97,12 @@ const technologies = [
         name: 'Dribbble',
         image: IoLogoDribbble,
         link: 'https://dribbble.com/'
-      }
+      },
+      {
+        name: 'Trello',
+        image: FaTrello,
+        link: 'https://trello.com/'
+      },
   
 ];
 
