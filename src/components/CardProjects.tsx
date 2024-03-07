@@ -32,7 +32,7 @@ const CardProjects: React.FC = () => {
       nameProject: "Age Calculator",
       imgProject: "/assets/projects/2.png",
       siteProject: "https://agecalculator-2023.netlify.app/",
-      repositorieProject: "",
+      repositorieProject: "https://github.com/IngridAkeida/age-calculator-app-main",
       aboutProject:
         "Crafting an age calculator using JavaScript, CSS, and HTML was a journey of growth. I aimed for seamless validation and responsive design, ensuring an optimal user experience on any device. Through this project, I honed my skills and learned the importance of attention to detail and perseverance.",
       buildProject: MdPerson2,
@@ -42,8 +42,8 @@ const CardProjects: React.FC = () => {
       nameProject: "Calculator",
       imgProject: "/assets/projects/4.png",
       siteProject: "https://calcz.netlify.app/",
-      repositorieProject: "",
-      aboutProject: `Building Calcz was a journey of discovery. Through JavaScript and Bootstrap, I learned to navigate challenges, embrace failures, and celebrate victories. Each line of code was a step forward, each bug a lesson learned. With Calcz, I ${`didn't`} just create a calculator—I uncovered my potential, honed my skills, and found joy in the process of creation.`,
+      repositorieProject: "https://github.com/IngridAkeida/calculadora",
+      aboutProject: `Building Calcz was a journey of discovery. Through JavaScript, HTML and Css, I learned to navigate challenges, embrace failures, and celebrate victories. Each line of code was a step forward, each bug a lesson learned. With Calcz, I ${`didn't`} just create a calculator—I uncovered my potential, honed my skills, and found joy in the process of creation.`,
       buildProject: MdPerson2,
       technologies: ["ReactJs", "css"],
     },
@@ -83,10 +83,10 @@ const CardProjects: React.FC = () => {
                 </h5>
                 <project.buildProject />
               </div>
-              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              <p className="mb-10 font-normal text-gray-700 dark:text-gray-400">
                 {project.aboutProject}
               </p>
-              <div className="flex justify-between ">
+              <div className="flex absolute bottom-4 gap-4">
                 <a
                   href={project.siteProject}
                   className={styleLink}
