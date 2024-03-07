@@ -52,9 +52,9 @@ const Main: React.FC = () => {
           </div>
         </div>
         
-        <div id='projects' className='container h-screen flex flex-col justify-left'>
+        <div id='projects' className='container flex flex-col justify-left'>
           <h3 className="text-2xl font-bold mb-2">Projects:</h3>
-        <CardProjects/> 
+          <CardProjects/> 
         </div>
       </div>
     </main>
