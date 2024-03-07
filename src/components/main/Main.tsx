@@ -24,15 +24,18 @@ const Main: React.FC = () => {
         <div id="page1" className='container h-screen flex flex-col gap-4 justify-center items-center'>
           <Intro/>
           <Overview/>
-          <button 
-            className='animate-bounce mt-4 bg-cyan-300 py-2 px-4 rounded-md'
-            onClick={scrollToProjects}>
-            <a href="#projects" className='flex items-center gap-2'>   
-              <CiDesktopMouse2 size={30}/> 
-              Scroll to Projects 
-              <IoIosArrowDown size={30}/>
-            </a>
-          </button>          
+          <div className="absolute bottom-4">
+            <button 
+              className='animate-bounce mt-4 bg-cyan-300 py-2 px-4 rounded-md'
+              onClick={scrollToProjects}>
+              <a href="#projects" className='flex items-center gap-2'>   
+                <CiDesktopMouse2 size={30}/> 
+                Scroll to Projects 
+                <IoIosArrowDown size={30}/>
+              </a>
+            </button> 
+          </div>
+                   
         </div>
 
         <div className='containerflex flex-col gap-4 justify-center items-center'>
