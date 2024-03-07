@@ -11,8 +11,8 @@ const CardProjects: React.FC = () => {
 
   const CardProjects = [
     {
-      nameProject: 'example',
-      imgProject: 'https://www.petz.com.br/blog//wp-content/uploads/2021/11/enxoval-para-gato-Copia.jpg',
+      nameProject: 'HyperFlix',
+      imgProject: '',
       siteProject: '',
       repositorieProject:'',
       aboutProject:'loremmmmmmmm',
@@ -20,8 +20,8 @@ const CardProjects: React.FC = () => {
       technologies: [ 'ReactJs', 'css']
     },
     {
-      nameProject: 'example',
-      imgProject: 'https://www.petz.com.br/blog//wp-content/uploads/2021/11/enxoval-para-gato-Copia.jpg',
+      nameProject: 'Pet Finder',
+      imgProject: '',
       siteProject: '',
       repositorieProject:'',
       aboutProject:'loremmmmmmmm',
@@ -29,8 +29,8 @@ const CardProjects: React.FC = () => {
       technologies: [ 'ReactJs', 'css']
     },
     {
-      nameProject: 'example',
-      imgProject: 'https://www.petz.com.br/blog//wp-content/uploads/2021/11/enxoval-para-gato-Copia.jpg',
+      nameProject: 'Age Calculator',
+      imgProject: '',
       siteProject: '',
       repositorieProject:'',
       aboutProject:'loremmmmmmmm',
@@ -38,8 +38,8 @@ const CardProjects: React.FC = () => {
       technologies: [ 'ReactJs', 'css']
     },
     {
-      nameProject: 'example',
-      imgProject: 'https://www.petz.com.br/blog//wp-content/uploads/2021/11/enxoval-para-gato-Copia.jpg',
+      nameProject: 'Calculator',
+      imgProject: '',
       siteProject: '',
       repositorieProject:'',
       aboutProject:'loremmmmmmmm',
@@ -47,8 +47,8 @@ const CardProjects: React.FC = () => {
       technologies: [ 'ReactJs', 'css']
     },
     {
-      nameProject: 'example',
-      imgProject: 'https://www.petz.com.br/blog//wp-content/uploads/2021/11/enxoval-para-gato-Copia.jpg',
+      nameProject: 'Find My GitHub',
+      imgProject: '',
       siteProject: '',
       repositorieProject:'',
       aboutProject:'loremmmmmmmm',
@@ -59,18 +59,17 @@ const CardProjects: React.FC = () => {
 
 
   return (
-    <ul className="flex gap-4">
+    <ul className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
       {CardProjects.map((project, index) => (
-        <li key={index} className="flex gap-4 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-        
+        <li key={index} className="flex gap-4 bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 h-auto max-w-full rounded-lg">
+
           <div  className="relative">
             <div className="rounded-t-lg overflow-hidden">
               <Image
                 src={project.imgProject}
                 alt=""
-                layout="responsive"
-                width={400}
-                height={200}
+                width={200}
+                height={100}
                 objectFit="cover"
               />
             </div>
@@ -95,6 +94,12 @@ const CardProjects: React.FC = () => {
 }
 
 export default CardProjects;
+
+
+
+
+
+
 
 
 
