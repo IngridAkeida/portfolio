@@ -15,17 +15,13 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       animation: {
-        marqueeXl: 'marquee 5s linear infinite',
-        marquee2Xl: 'marquee2 5s linear infinite',
-        marqueeMd: 'marquee 10s linear infinite',
-        marquee2Md: 'marquee2 10s linear infinite',
-        marqueeSm: 'marquee 15s linear infinite',
-        marquee2Sm: 'marquee2 15s linear infinite',
+        marquee: 'marquee 10s linear infinite',
+        marquee2: 'marquee2 10s linear infinite',
       },
       keyframes: {
         marquee: {
           '0%': { transform: 'translateX(0%)' },
-          '100%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(-100%)' },  
         },
         marquee2: {
           '0%': { transform: 'translateX(100%)' },
