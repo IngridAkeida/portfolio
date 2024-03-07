@@ -1,8 +1,21 @@
 import Image from "next/legacy/image";
+import { IconType } from "react-icons";
 import { IoIosPeople } from "react-icons/io";
 import { MdPerson2 } from "react-icons/md";
 
-const CardProjects: React.FC = () => {
+interface ProjectProps{
+    abilities: {
+      nameProject: string;
+      imgProject:  string;
+      siteProject: string;
+      repositorieProject: string;
+      aboutProject: string;
+      buildProject: IconType;
+      technologies: string[];
+    }[];
+}
+
+const CardProjects: React.FC <ProjectProps> = () => {
   const styleLink =
     "inline-flex items-center justify-center px-3 py-2 text-sm w-24 font-medium text-center bg-cyan-950 hover:bg-cyan-700 text-gray-100 rounded-md focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800";
 
