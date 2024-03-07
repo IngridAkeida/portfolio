@@ -22,8 +22,11 @@ const Main: React.FC = () => {
       <div className='md:visible'></div>
       <div className='col-span-5'>
         <div id="page1" className='container h-screen flex flex-col gap-4 justify-center items-center bg-cover bg-no-repeat bg-center bg-image'>
-          <Intro/>
-          <Overview/>
+          <div className="p-2 bg-cyan-50 bg-opacity-50 rounded-md">
+            <Intro/>
+            <Overview/>
+          </div>
+          
           <div className="absolute bottom-4">
             <button 
               className='animate-bounce mt-4 bg-cyan-300 py-2 px-4 rounded-md'
