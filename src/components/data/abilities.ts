@@ -2,8 +2,8 @@ import { FaComments, FaTools, FaRegListAlt, FaUserCog, FaClock, FaUserFriends, F
 
 
 const abilities = [
-  { icon: FaComments, skill: "Communication" },
   { icon: FaTools, skill: "Problem-solving" },
+  { icon: FaComments, skill: "Communication" },
   { icon: FaRegListAlt, skill: "Attention to detail" },
   { icon: FaUserCog, skill: "Adaptability" },
   { icon: FaClock, skill: "Time management" },
