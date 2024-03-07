@@ -19,7 +19,7 @@ const Menus: React.FC = () => {
       menuHref: '#projects'
     },
     {
-      menuName: 'Hire Me 📧',
+      menuName: 'Email Me 📧',
       menuStyle: munuTailwind,
       menuHref: 'mailto:ingridsanchesp@gmail.com',
       menuRedirect: '_blank',

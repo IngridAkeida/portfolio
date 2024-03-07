@@ -27,13 +27,13 @@ const Sidebar: React.FC = () => {
       icon: FaMedium,
     }, 
     { 
-      nameLink: 'Email',
-      link: "https://dribbble.com/IngriDiz",
+      nameLink: 'Email Me',
+      link: "mailto:ingridsanchesp@gmail.com",
       icon: BiLogoGmail,
     },
     { 
       nameLink: 'Drinbble',
-      link: 'mailto:ingridsanchesp@gmail.com',
+      link: 'https://dribbble.com/IngriDiz',
       icon: IoLogoDribbble,
     },
   ] 
