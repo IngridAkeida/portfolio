@@ -11,7 +11,7 @@ const AbilitiesList : React.FC<AbilitiesProps> = ({ abilities }) => {
   
   return (
     <>
-      <h4 className="text-xl mt-2 mb-1">Softs</h4>
+      <h4 className="text-xl mt-2 mb-1">Softs Skills</h4>
       <div className="flex flex-col">
         <ul className="flex flex-wrap justify-start gap-4">
           {abilities.map((ability, index) => (

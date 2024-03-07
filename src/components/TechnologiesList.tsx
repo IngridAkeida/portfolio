@@ -11,7 +11,7 @@ interface TechnologiesProps {
 const TechnologiesList: React.FC<TechnologiesProps> = ({ technologies }) => {
   return (
     <>
-      <h4 className="text-xl mt-2 mb-1">Hards</h4>
+      <h4 className="text-xl mt-2 mb-1">Hard Skills</h4>
       <div className="flex flex-col">
         <ul className="flex flex-wrap justify-start gap-4">
           {technologies.map((technology, index) => (
