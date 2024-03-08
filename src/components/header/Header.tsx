@@ -1,3 +1,5 @@
+"use client"
+
 import NavBar from "./Navbar";
 import Sidebar from "./Sidebar";
 

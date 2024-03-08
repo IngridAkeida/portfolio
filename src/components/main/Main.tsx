@@ -1,12 +1,13 @@
+"use client"
 import { CiDesktopMouse2 } from "react-icons/ci";
 import { IoIosArrowDown } from "react-icons/io";
 
 import Intro from "./Intro";
 import Overview from "./Overview";
 import TechnologiesList from "./TechnologiesList";
-import technologies from "../data/technologies";
+import technologies from "@/components/data/technologies";
 import AbilitiesList from "./AbilitiesList";
-import abilities from "../data/abilities";
+import abilities from "@/components/data/abilities";
 import CardProjects from "./CardProjects";
 
 import { useRef, useCallback } from "react";
