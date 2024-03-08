@@ -1,4 +1,15 @@
-import { FaComments, FaTools, FaRegListAlt, FaUserCog, FaClock, FaUserFriends, FaLightbulb, FaBrain, FaUserCheck, FaBook } from 'react-icons/fa';
+import {
+  FaComments,
+  FaTools,
+  FaRegListAlt,
+  FaUserCog,
+  FaClock,
+  FaUserFriends,
+  FaLightbulb,
+  FaBrain,
+  FaUserCheck,
+  FaBook
+} from 'react-icons/fa';
 
 
 const abilities = [
