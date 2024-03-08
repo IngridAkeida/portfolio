@@ -1,5 +1,5 @@
 import Image from "next/legacy/image";
-import BtnContratMe from "../ui-components/Btn-ContratMe";
+import BtnContratMe from "@/components/ui-components/Btn-ContratMe";
 
 const Intro: React.FC = () => {
   return (

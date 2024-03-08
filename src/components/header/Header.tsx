@@ -1,7 +1,7 @@
 "use client"
 
-import NavBar from "./Navbar";
-import Sidebar from "./Sidebar";
+import NavBar from "@/components/header/Navbar";
+import Sidebar from "@/components/header/Sidebar";
 
 const Header: React.FC = () => {
   return (

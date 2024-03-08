@@ -2,13 +2,13 @@
 import { CiDesktopMouse2 } from "react-icons/ci";
 import { IoIosArrowDown } from "react-icons/io";
 
-import Intro from "./Intro";
-import Overview from "./Overview";
-import TechnologiesList from "./TechnologiesList";
+import Intro from "@/components/main/Intro";
+import Overview from "@/components/main/Overview";
+import TechnologiesList from "@/components/main/TechnologiesList";
 import technologies from "@/components/data/technologies";
-import AbilitiesList from "./AbilitiesList";
+import AbilitiesList from "@/components/main/AbilitiesList";
 import abilities from "@/components/data/abilities";
-import CardProjects from "./CardProjects";
+import CardProjects from "@/components/main/CardProjects";
 
 import { useRef, useCallback } from "react";
 

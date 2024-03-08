@@ -1,4 +1,4 @@
-import Menus from "../ui-components/Menus";
+import Menus from "@/components/ui-components/Menus";
 
 const currentYear = new Date().getFullYear();
 

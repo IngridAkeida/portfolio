@@ -1,8 +1,8 @@
 import { useState } from "react";
 import BtnDarkMode from "../ui-components/Btn-DarkMode";
-import Logo from "./Logo";
-import Menus from "../ui-components/Menus";
-import Sidebar from "./Sidebar";
+import Logo from "@/components/header/Logo";
+import Menus from "@/components/ui-components/Menus";
+import Sidebar from "@/components/header/Sidebar";
 
 
 const btnDropdownStyle =
