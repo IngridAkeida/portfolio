@@ -7,19 +7,19 @@ import technologies from "../data/technologies";
 import AbilitiesList from "../AbilitiesList";
 import abilities from "../data/abilities";
 import CardProjects from "../CardProjects";
+import { useRef, useCallback } from 'react';
 
 const Main: React.FC = () => {  
+  const projectsRef = useRef<HTMLDivElement | null>(null);
 
-  function scrollToProjects() {
-    const projectsElement = document.getElementById('projects');
-    if (projectsElement) {
-      projectsElement.scrollIntoView({ behavior: 'smooth' });
+  const scrollToProjects = useCallback(() => {
+    if (projectsRef.current) {
+      projectsRef.current.scrollIntoView({ behavior: 'smooth' });
     }
-  }
+  }, []);
 
   return(
     <main className="px-4 mt-8 mx-auto min-h-screen md:grid md:grid-cols-6 gap-4 ">  
-      <div className='md:visible'></div>
       <div className='col-span-5'>
         <div id="page1" className='container h-screen flex flex-col gap-4 justify-center items-center'>
             <Intro/>
@@ -41,7 +41,7 @@ const Main: React.FC = () => {
           <div className='scroll-m-8'>
             <h3 className=" text-2xl font-bold mt-2 mb-1">About me:</h3>
             <article className="text-md">
-              I am a front-end developer, with a background in UX/UI and a passion for technology. I am a creative and curious person, always looking for new challenges and opportunities to learn. I am a team player, with a strong sense of empathy and a passion for creating user-friendly and accessible digital solutions. I am a student at Hyper Island, working as a freelancer in the digital universe. I am currently diving head first into React and TypeScript, but hey, I am ready for any project! After all, learning is my game. Oh, and did I mention? I love cats and horror movies. So expect some spooky surprises in my projects! 😉
+            I am a front-end developer, with a background in UX/UI and a passion for technology. I am a creative and curious person, always looking for new challenges and opportunities to learn. I am a team player, with a strong sense of empathy and a passion for creating user-friendly and accessible digital solutions. I am a student at Hyper Island, working as a freelancer in the digital universe. I am currently diving head-first into React and TypeScript, but hey, I am ready for any project! After all, learning is my game. Oh, and did I mention? I love cats and horror movies. So expect some spooky surprises in my projects! 😉
             </article>
           </div>
           <div id="skills" className="container scroll-mt-20">
@@ -54,7 +54,9 @@ const Main: React.FC = () => {
           </div>
         </div>
         
-        <CardProjects Projects={[]} />
+        <div ref={projectsRef}>
+          <CardProjects Projects={[]} />
+        </div>
       </div>
     </main>
   )
