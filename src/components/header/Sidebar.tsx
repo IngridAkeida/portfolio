@@ -39,7 +39,7 @@ const Sidebar: React.FC = () => {
   ] 
 
   return (
-    <div className="md:h-screen ml-4 sm:w-32 flex md:flex-col items-center md:justify-center md:fixed">
+    <div className="md:h-screen ml-4 sm:w-32 flex md:flex-col items-center md:justify-center md:fixed md:z-50 ">
       <ul className=" flex md:flex-col  gap-2 md:gap-4">
         {externalLinks.map(( link, index)=>(
           <li key={index} className={styleLi}>
