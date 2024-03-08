@@ -18,7 +18,7 @@ const Intro: React.FC = () => {
         <div className="relative overflow-hidden my-2">
           <Image
             className="hover:animate-wiggle animate-once rounded-full shadow-md"
-            src="/assets/bio-image.png"
+            src="/assets/bio-image.webp"
             alt="Ingrid Sanches Perfil image"
             width={200}
             height={200}
