@@ -5,9 +5,9 @@ import { IoIosArrowDown } from "react-icons/io";
 import Intro from "@/components/main/Intro";
 import Overview from "@/components/main/Overview";
 import TechnologiesList from "@/components/main/TechnologiesList";
-import technologies from "@/components/data/technologies";
+import technologies from "@/data/technologies";
 import AbilitiesList from "@/components/main/AbilitiesList";
-import abilities from "@/components/data/abilities";
+import abilities from "@/data/abilities";
 import CardProjects from "@/components/main/CardProjects";
 
 import { useRef, useCallback } from "react";
