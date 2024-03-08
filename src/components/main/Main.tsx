@@ -30,7 +30,7 @@ const Main: React.FC = () => {
       <div className="col-span-5">
         <div
           id="page1"
-          className="container h-screen flex flex-col gap-4 justify-center items-center"
+          className="container h-screen flex flex-col gap-4 justify-center items-center -mt-4"
         >
           <Intro />
           <Overview />
