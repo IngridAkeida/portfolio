@@ -1,13 +1,16 @@
 import { CiDesktopMouse2 } from "react-icons/ci";
+import { IoIosArrowDown } from "react-icons/io";
+
 import Intro from "./Intro";
 import Overview from "./Overview";
-import { IoIosArrowDown } from "react-icons/io";
 import TechnologiesList from "./TechnologiesList";
 import technologies from "../data/technologies";
 import AbilitiesList from "./AbilitiesList";
 import abilities from "../data/abilities";
 import CardProjects from "./CardProjects";
+
 import { useRef, useCallback } from "react";
+
 
 const Main: React.FC = () => {
   const projectsRef = useRef<HTMLDivElement | null>(null);
