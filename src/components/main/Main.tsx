@@ -24,13 +24,13 @@ const Main: React.FC = () => {
 
   return (
     <main className="
-    px-16 mt-8 mx-auto min-h-screen gap-4
+    px-4 mt-2 mx-auto min-h-screen gap-4
     md:grid md:grid-cols-6">
       <div></div>
       <div className="col-span-5">
         <div
           id="page1"
-          className="container h-screen flex flex-col gap-4 justify-center items-center -mt-4"
+          className="container h-screen flex flex-col gap-4 justify-center items-center"
         >
           <Intro />
           <Overview />
