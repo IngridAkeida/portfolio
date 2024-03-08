@@ -49,10 +49,10 @@ const Main: React.FC = () => {
         </div>
 
         <div
-          id="about"
-          className="container scroll-mt-20 flex flex-col gap-4 justify-center items-center"
+          className="flex flex-col gap-4 justify-center items-center"
         >
-          <div className="scroll-m-8">
+          <div id="about" className="container 
+          scroll-mt-96 md:scroll-mt-16">
             <h3 className=" text-2xl font-bold mt-2 mb-1">About me:</h3>
             <article className="text-md">
               I am a front-end developer, with a background in UX/UI and a
@@ -67,7 +67,7 @@ const Main: React.FC = () => {
               spooky surprises in my projects! 😉
             </article>
           </div>
-          <div id="skills" className="container scroll-mt-20">
+          <div id="skills" className="container scroll-mt-96 md:scroll-mt-16">
             <h3 className="text-2xl font-bold mt-2 mb-1">Skills:</h3>
             <article className="text-md">
               My journey began with a fascination for UI and UX, but soon, I
@@ -83,11 +83,12 @@ const Main: React.FC = () => {
             <TechnologiesList technologies={technologies} />
             <AbilitiesList abilities={abilities} />
           </div>
+          <div id="projects" className="container scroll-mt-96 md:scroll-mt-16" ref={projectsRef}>
+            <h3 className="text-2xl font-bold mt-2 mb-1">My Projects:</h3>
+            <CardProjects Projects={[]} />
+          </div>
         </div>
-
-        <div ref={projectsRef}>
-          <CardProjects Projects={[]} />
-        </div>
+        
       </div>
     </main>
   );
