@@ -1,5 +1,6 @@
 import Menus from '../Menus';
 
+const currentYear = new Date().getFullYear();
 
 const Footer: React.FC = () => {  
   return(
@@ -10,9 +11,9 @@ const Footer: React.FC = () => {
               <Menus />
             </div>
           </nav>
-          <div className='text-[#cededc] rounded-md'>
-           © {new Date().getFullYear()} Ingrid Sanches. All rights reserved.
-          </div>
+          <address className='text-[#cededc] rounded-md'>
+           © {currentYear} Ingrid Sanches. All rights reserved.
+          </address>
         </div>
       </footer>
   )
