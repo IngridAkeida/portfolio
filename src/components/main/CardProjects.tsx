@@ -96,7 +96,7 @@ const CardProjects: React.FC <ProjectProps> = () => {
                 </h5>
                 <project.buildProject />
               </div>
-              <p className="mb-10 font-normal text-gray-700 dark:text-gray-400">
+              <p className="mb-10 font-normal text-gray-900 dark:text-gray-400">
                 {project.aboutProject}
               </p>
               <div className="flex absolute bottom-4 gap-4">
