@@ -3,7 +3,7 @@ import Sidebar from "../Sidebar";
 
 const Header: React.FC = () => {  
   return(
-    <header>
+    <header aria-label="Main Navigation">
       <NavBar /> 
       <div className='md:block'>
         <Sidebar /> 
