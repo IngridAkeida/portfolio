@@ -4,12 +4,10 @@ import Main from '@/components/main/Main';
 
 const App = () => {
   return (      
-    <div className={`bg-[#cededc] font-amaranth text-cyan-900 dark:bg-cyan-900 dark:text-gray-100 transition-colors duration-500 ${'dark'} md:p-0 flex flex-col mx-auto lg:max-w-7xl`}>
+    <div className='bg-[#cededc] text-cyan-900 dark:bg-cyan-900 dark:text-gray-100 font-amaranth transition-colors duration-500 flex flex-col mx-auto md:p-0 lg:max-w-7xl'>
       <Header />
       <Main />
       <Footer />
-
-      
     </div>
   );
 };
