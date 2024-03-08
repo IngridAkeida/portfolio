@@ -23,7 +23,10 @@ const Main: React.FC = () => {
   }, []);
 
   return (
-    <main className="px-4 mt-8 mx-auto min-h-screen md:grid md:grid-cols-6 gap-4 ">
+    <main className="
+    px-16 mt-8 mx-auto min-h-screen gap-4
+    md:grid md:grid-cols-6">
+      <div></div>
       <div className="col-span-5">
         <div
           id="page1"
