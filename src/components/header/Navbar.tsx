@@ -23,7 +23,7 @@ const NavBar: React.FC = () => {
   };
 
   return (
-    <nav className="fixed w-screen top-0 z-50 md:p-0 mx-auto lg:max-w-7xl  ">
+    <nav className="fixed w-screen top-0 z-40 md:p-0 mx-auto lg:max-w-7xl  ">
       <div className="bg-cyan-950 px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           <Logo />
