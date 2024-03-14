@@ -13,17 +13,17 @@ const Sidebar: React.FC = () => {
   const externalLinks = [
     { 
       nameLink: 'LinkedIn',
-      link: "https://www.linkedin.com/",
+      link: "https://www.linkedin.com/in/ingrid-sanches/",
       icon: SlSocialLinkedin,
     }, 
     { 
       nameLink: 'GitHub',
-      link: "https://github.com/",
+      link: "https://github.com/IngridAkeida",
       icon: FiGithub,
     }, 
     { 
       nameLink: 'Medium',
-      link: "https://medium.com/",
+      link: "https://medium.com/@ingridsanchesp",
       icon: FaMedium,
     }, 
     { 
