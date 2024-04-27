@@ -3,7 +3,7 @@ const Overview: React.FC = () => {
     <section className='flex flex-col gap-4 items-center mx-2 md:w-full xl:w-3/4'>
       <div className='flex flex-col mb-8'>
         <p>
-        From the corporate world to the Tech realm, my journey began. Studying at Hyper Island, freelancing, and mastering React and TypeScript, I seek collaboration and adventure. With a love for cats and horror movies, I infuse my projects with playful surprises. This is the tale of my transformation and the endless possibilities of destiny⭐️!</p>
+        Even though my background is in administration, I've found my passion as a Front-End Developer. I love working on visually appealing websites and meeting tight deadlines. I'm known for my attention to detail and organization skills. As a team player, I'm dedicated to making projects successful. With expertise in HTML, CSS, and JavaScript, I'm ready to create outstanding digital experiences.⭐️!</p>
       </div>
 
     </section>

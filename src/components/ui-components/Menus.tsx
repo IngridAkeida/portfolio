@@ -9,7 +9,7 @@ const Menus: React.FC = () => {
       menuHref: '#about'
     },
     {
-      menuName: 'Skill',
+      menuName: 'Skills',
       menuStyle: munuTailwind,
       menuHref: '#skills'
     },

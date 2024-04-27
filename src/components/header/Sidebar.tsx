@@ -2,7 +2,7 @@ import { FaMedium } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 import { SlSocialLinkedin } from "react-icons/sl";
 import { BiLogoGmail } from "react-icons/bi";
-import {IoLogoDribbble } from "react-icons/io";
+import { TbFileCv } from "react-icons/tb";
 
 
 const Sidebar: React.FC = () => {
@@ -32,9 +32,9 @@ const Sidebar: React.FC = () => {
       icon: BiLogoGmail,
     },
     { 
-      nameLink: 'Drinbble',
-      link: 'https://dribbble.com/IngriDiz',
-      icon: IoLogoDribbble,
+      nameLink: 'File CV',
+      link: 'https://drive.google.com/file/d/1vs3Az_v5SP_O9y1y0nI7d1HM07X-zIVI/view',
+      icon: TbFileCv,
     },
   ] 
 
