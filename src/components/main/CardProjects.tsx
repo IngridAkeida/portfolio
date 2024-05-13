@@ -64,12 +64,11 @@ const CardProjects: React.FC <ProjectProps> = () => {
       nameProject: 'Mentatt',
       imgProject: '/assets/projects/5.png',
       siteProject: 'https://mentatt.vercel.app/',
-      repositorieProject:'',
+      repositorieProject:'https://github.com/IngridAkeida',
       aboutProject: `Mentatt expands to Eastern Africa with a user-centric webpage featuring services, success stories, and Imigongo art. Through interviews, prototypes, and linguistic inclusivity, we ensure an engaging and culturally rich experience for all users.`,
       buildProject: IoIosPeople,
-      technologies: [ 'ReactJs', 'talwindcss', 'nextjs', 'typescript', 'i18next', 'react-icons',]
+      technologies: [ 'ReactJs', 'talwindcss', 'nextjs', 'typescript', 'i18next', 'react-icons']
     },
-
     // {
     //   nameProject: 'Find My GitHub',
     //   imgProject: '/assets/projects/5.png',
