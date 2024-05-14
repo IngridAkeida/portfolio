@@ -47,7 +47,7 @@ const Sidebar: React.FC = () => {
               <span>
                 <link.icon 
                   size={18} 
-                  className="hover:animate-wiggle-more"
+                  className="sm:hover:animate-wiggle-more"
                 />
               </span>
             </a>
