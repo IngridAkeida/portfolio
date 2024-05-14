@@ -88,7 +88,7 @@ const CardProjects: React.FC <ProjectProps> = () => {
           className="flex gap-4 bg-[#709994] border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 h-auto max-w-96 rounded-lg"
         >
           <div className="group h-96 w-96 [perspective:1000px]">
-            <div className="relative text-center h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+            <div className="relative text-center h-full w-full rounded-xl  transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
               <div className="abosulte inset-0 text-white">
                 <h2 className="my-2 text-2xl font-bold tracking-tight">{project.nameProject}</h2>
                 <Image
@@ -102,7 +102,7 @@ const CardProjects: React.FC <ProjectProps> = () => {
                 />
                 <div className="p-2">{project.technologies.join(' ')}</div>
               </div>
-              <div className="absolute inset-0 h-full w-full rounded-xl bg-[#709994] dark:bg-gray-800 px-8 text-center text-slate-200 dark:text-slate-900 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+              <div className="absolute inset-0 h-full w-full rounded-xl bg-[#709994] dark:bg-gray-800 px-8 text-center text-slate-200 dark:text-slate-900 [transform:rotateY(180deg)] [backface-visibility:hidden] -mt-2">
                 <div className="flex mt-2 flex-col items-center justify-center text-white">
                   <h2 className="mb-2 text-2xl font-bold tracking-tight text-white">{project.nameProject}</h2>
                   <project.buildProject />
