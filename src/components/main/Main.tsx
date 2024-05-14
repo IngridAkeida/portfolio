@@ -77,8 +77,7 @@ const Main: React.FC = () => {
               also ventured into the realms of SEO and accessibility,
               recognizing their profound impact on user experience. After all,
               what purpose does a website serve if it {`doesn't`} cater to the
-              needs and desires of its users? Join me as I share my journey and
-              the valuable lessons I continue to learn along the way.
+              needs and desires of its users, right? so that is my main goal always.
             </article>
             <TechnologiesList technologies={technologies} />
             <AbilitiesList abilities={abilities} />
