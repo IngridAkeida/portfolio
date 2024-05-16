@@ -5,7 +5,7 @@ const Header: React.FC = () => {
   return (
     <header aria-label="Main Navigation">
       <NavBar />
-      <div className="invisible md:block">
+      <div className="hidden md:block">
         <Sidebar />
       </div>
     </header>
