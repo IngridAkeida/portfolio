@@ -54,7 +54,7 @@ const Main: React.FC = () => {
           <div id="about" className="container 
           scroll-mt-96 md:scroll-mt-16">
             <h3 className=" text-2xl font-bold mt-2 mb-1">About me:</h3>
-            <article className="text-md">
+            <article className="text-md dark:text-cyan-100">
               I am a front-end developer, with a background in UX/UI and a
               passion for technology. I am a creative and curious person, always
               looking for new challenges and opportunities to learn. I am a team
@@ -69,7 +69,7 @@ const Main: React.FC = () => {
           </div>
           <div id="skills" className="container scroll-mt-96 md:scroll-mt-16">
             <h3 className="text-2xl font-bold mt-2 mb-1">Skills:</h3>
-            <article className="text-md">
+            <article className="text-md dark:text-cyan-100">
               My journey began with a fascination for UI and UX, but soon, I
               found my passion for programming. ReactJS has become an integral
               part of my daily workflow, and {`I've`} been delving into

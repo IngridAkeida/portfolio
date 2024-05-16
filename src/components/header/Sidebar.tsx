@@ -7,7 +7,7 @@ import { TbFileCv } from "react-icons/tb";
 
 const Sidebar: React.FC = () => {
 
-  const styleLi = "bg-cyan-950 p-2 sm:p-4 rounded-xl dark:border-cyan-950 dark:hover:border-cyan-500 border-2";
+  const styleLi = "bg-cyan-950 p-2 sm:p-4 rounded-xl dark:border-cyan-950 dark:hover:border-cyan-500 border-2 dark:hover:animate-borderAnimation";
   const styleA = "text-white dark:text-cyan-500 hover:text-white mb-4 md:mb-6";
 
   const externalLinks = [

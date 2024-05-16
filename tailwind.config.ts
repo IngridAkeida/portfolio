@@ -47,10 +47,19 @@ const config: Config = {
           "100%": {
             borderColor: "white"
           }  
+        }, 
+        borderAnimation: {
+          "0%": {
+            borderColor: "#d600ff"
+          },
+          "100%": {
+            borderColor: "#06b6d4"
+          }
         }
       },
       animation: {
-        typing: "typing 3s steps(18) alternate, blink .7s infinite"
+        typing: "typing 3s steps(18) alternate, blink .7s infinite",
+        borderAnimation: "borderAnimation 1.5s infinite alternate"
       }
     },
   },

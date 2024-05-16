@@ -13,16 +13,16 @@ import {
 
 
 const abilities = [
-  { icon: FaTools, skill: "Problem-solving" },
-  { icon: FaComments, skill: "Communication" },
-  { icon: FaRegListAlt, skill: "Attention to detail" },
-  { icon: FaUserCog, skill: "Adaptability" },
-  { icon: FaClock, skill: "Time management" },
-  { icon: FaUserFriends, skill: "Teamwork" },
-  { icon: FaLightbulb, skill: "Creativity" },
-  { icon: FaBrain, skill: "Critical thinking" },
-  { icon: FaUserCheck, skill: "Attention to user experience" },
-  { icon: FaBook, skill: "Continuous learning" }
+  { icon: FaTools, skill: "Problem-solving", link: "https://github.com/IngridAkeida" },
+  { icon: FaRegListAlt, skill: "Attention to detail", link: "https://github.com/IngridAkeida" },
+  { icon: FaUserCog, skill: "Adaptability", link: "https://github.com/IngridAkeida" },
+  { icon: FaClock, skill: "Time management", link: "https://github.com/IngridAkeida" },
+  { icon: FaUserFriends, skill: "Teamwork", link: "https://github.com/IngridAkeida" },
+  { icon: FaLightbulb, skill: "Creativity", link: "https://github.com/IngridAkeida" },
+  { icon: FaBrain, skill: "Critical thinking", link: "https://github.com/IngridAkeida" },
+  { icon: FaUserCheck, skill: "Attention to user experience", link: "https://github.com/IngridAkeida" },
+  { icon: FaBook, skill: "Continuous learning", link: "https://github.com/IngridAkeida" }
 ];
+
 
 export default abilities;

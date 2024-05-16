@@ -17,7 +17,7 @@ const TechnologiesList: React.FC<TechnologiesProps> = ({ technologies }) => {
           {technologies.map((technology, index) => (
             <li
               key={index}
-              className="sm:hover:animate-jump hover:border-zinc-950 w-22 text-wrap text-center"
+              className="sm:hover:animate-jump hover:border-transparent w-22 text-wrap text-center dark:hover:border-cyan-500 border-2 border-transparent dark:hover:animate-borderAnimation rounded-xl"
             >
               <a
                 href={technology.link}
@@ -26,8 +26,8 @@ const TechnologiesList: React.FC<TechnologiesProps> = ({ technologies }) => {
                 aria-label={technology.name}
                 rel="noreferrer"
               >
-                <technology.image size={30} />
-                <p className="mt-2 text-sm">{technology.name}</p>
+                <technology.image size={30} className="dark:text-cyan-100" />
+                <p className="mt-2 text-sm dark:text-cyan-100">{technology.name}</p>
               </a>
             </li>
           ))}
