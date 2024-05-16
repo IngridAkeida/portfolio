@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import BtnDarkMode from "../ui-components/Btn-DarkMode";
 import Logo from "@/components/header/Logo";
 import Menus from "@/components/ui-components/Menus";
@@ -12,6 +12,24 @@ const btnDropdownStyle =
 const NavBar: React.FC = () => {
   const [darkMode, setDarkMode] = useState<boolean>(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      if (scrollTop > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -23,8 +41,10 @@ const NavBar: React.FC = () => {
   };
 
   return (
-    <nav className="fixed w-screen top-0 z-40 md:p-0 mx-auto lg:max-w-7xl  ">
-      <div className="bg-cyan-950 px-4 sm:px-6 lg:px-8">
+    <nav className="fixed w-screen top-0 z-40 md:p-0 mx-auto lg:max-w-7xl">
+      <div className={`px-4 sm:px-6 lg:px-8 transition-colors duration-500 ${
+        isScrolled ? 'bg-cyan-950' : 'bg-transparent dark:bg-cyan-900'
+      }`}>
         <div className="flex items-center justify-between h-16 md:h-20">
           <Logo />
           <div className="flex justify-end items-center">
@@ -72,7 +92,7 @@ const NavBar: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className={`${isOpen ? "block" : "hidden"} md:hidden`}>
+        <div className={`${isOpen ? "block" : "hidden"} md:hidden bg-cyan-950`}>
           <div className="px-2 pt-2 pb-3 sm:px-3">
             <Menus />
           </div>
