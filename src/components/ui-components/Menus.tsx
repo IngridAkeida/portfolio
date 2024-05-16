@@ -1,6 +1,6 @@
 const Menus: React.FC = () => {
 
-  const munuTailwind = 'block py-2 px-3 text-gray-100  md:border-0 md:p-2 dark:hover:text-cyan-950 hover:bg-cyan-800  dark:hover:bg-[#cededc] rounded-md';
+  const munuTailwind = 'block py-2 px-3 text-cyan-500 dark:text-gray-100 md:border-0 md:p-2 dark:hover:text-cyan-950 hover:bg-cyan-800  dark:hover:bg-[#cededc] rounded-md';
 
   const menus = [
     {
