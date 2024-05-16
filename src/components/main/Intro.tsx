@@ -11,7 +11,7 @@ const Intro: React.FC = () => {
       <div className="md:col-span-2 xl:col-span-3">
           <h1 className="text-2xl font-bold flex flex-wrap">
             Hi,<div className="animate-wiggle animate-infinite">👋🏻</div>   
-            <TypingAnimation text={`I'm Ingrid Sanches`} /> 
+            <TypingAnimation text={`I'm Ingrid Sanchess`} /> 
           </h1>
           
           <h2 className="text-md font-bold">Front End Developer</h2>
