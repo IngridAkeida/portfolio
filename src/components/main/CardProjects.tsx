@@ -67,7 +67,7 @@ const CardProjects: React.FC <ProjectProps> = () => {
       repositorieProject:'https://github.com/IngridAkeida',
       aboutProject: `Mentatt expands to Eastern Africa with a user-centric webpage featuring services, success stories, and Imigongo art. Through interviews, prototypes, and linguistic inclusivity, we ensure an engaging and culturally rich experience for all users.`,
       buildProject: IoIosPeople,
-      technologies: [ '#reactjs', '#talwindcss', '#nextjs', '#i18next', '#react-icons', '#storybook', '#jest.js', '#trello', '#figma']
+      technologies: [ '#reactjs', '#talwindcss', '#nextjs', '#i18next', '#jest.js']
     },
     // {
     //   nameProject: 'Find My GitHub',
